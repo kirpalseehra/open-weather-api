@@ -10,8 +10,4 @@ class Weather
   def five_day_service
     FiveDay.new
   end
-
 end
-
-@weather_api = Weather.new
-puts @weather_api.current_weather_service.current_weather_request_by_name('London')

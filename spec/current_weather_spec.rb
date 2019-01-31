@@ -305,5 +305,4 @@ describe Weather do
       expect(@current_weather_service.retrieve_cod).to be_kind_of(Integer) 
     end
   end
-
 end

@@ -30,18 +30,66 @@ describe Weather do
       expect(@five_day_service.retrieve_list).to be_kind_of(Array)
     end
 
-    it 'should return all the dt elements in the array' do
+    it 'should return all the dt elements as an Integer' do
       @five_day_service.retrieve_dt_loop.each do |duck|
         expect(duck).to be_kind_of(Integer)
       end
     end
 
+    it 'should return all the main elements as a Hash' do
+      @five_day_service.retrieve_main_loop.each do |duck|
+        expect(duck).to be_kind_of(Hash)
+      end
+    end
 
+    it 'should return all the main temp elements as a Float' do
+      @five_day_service.retrieve_main_temp_loop.each do |duck|
+        expect(duck).to be_kind_of(Float)
+      end
+    end
 
+    it 'should return all the main temp min elements as a Float' do
+      @five_day_service.retrieve_main_temp_min_loop.each do |duck|
+        expect(duck).to be_kind_of(Float)
+      end
+    end
 
+    it 'should return all the main temp max elements as a Float' do
+      @five_day_service.retrieve_main_temp_max_loop.each do |duck|
+        expect(duck).to be_kind_of(Float)
+      end
+    end
 
+    it 'should return all the main pressure elements as a Float' do
+      @five_day_service.retrieve_main_pressure_loop.each do |duck|
+        expect(duck).to be_kind_of(Float) | be_kind_of(Integer)
+      end
+    end
 
+    it 'should return all the main sea level elements as a Float' do
+      @five_day_service.retrieve_main_sea_level_loop.each do |duck|
+        expect(duck).to be_kind_of(Float) | be_kind_of(Integer)
+      end
+    end
 
+    it 'should return all the main ground level elements as a Float' do
+      @five_day_service.retrieve_main_ground_level_loop.each do |duck|
+        expect(duck).to be_kind_of(Float) | be_kind_of(Integer)
+      end
+    end
+
+    it 'should return all the main humidity elements as a Float' do
+      @five_day_service.retrieve_main_humidity_loop.each do |duck|
+        expect(duck).to be_kind_of(Float) | be_kind_of(Integer)
+      end
+    end
+
+    it 'should return all the main temp kf elements as a Float' do
+      @five_day_service.retrieve_main_temp_kf_loop.each do |duck|
+        expect(duck).to be_kind_of(Float) | be_kind_of(Integer)
+      end
+    end
+    
   end
 
 end

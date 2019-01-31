@@ -38,7 +38,6 @@ class FiveDay
   end
 
   def retrieve_dt_loop
-    
     dt_loop = []
     retrieve_list.each do |duck|
       dt_loop.push duck['dt']
@@ -46,12 +45,82 @@ class FiveDay
     dt_loop
   end
 
-end
+  def retrieve_main_loop
+    main_loop = []
+    retrieve_list.each do |duck|
+      main_loop.push duck['main']
+    end
+    main_loop
+  end
 
-# test = FiveDay.new
-# puts test.five_day_request_by_name('London')
-# puts test.five_day_request_by_id('3632308')
+  def retrieve_main_temp_loop
+    main_temp_loop = []
+    retrieve_main_loop.each do |duck|
+      main_temp_loop.push duck['temp']
+    end
+    main_temp_loop
+  end
+
+  def retrieve_main_temp_min_loop
+    main_temp_min_loop = []
+    retrieve_main_loop.each do |duck|
+      main_temp_min_loop.push duck['temp_min']
+    end
+    main_temp_min_loop
+  end
+
+  def retrieve_main_temp_max_loop
+    main_temp_max_loop = []
+    retrieve_main_loop.each do |duck|
+      main_temp_max_loop.push duck['temp_max']
+    end
+    main_temp_max_loop
+  end
+
+  def retrieve_main_pressure_loop
+    main_pressure_loop = []
+    retrieve_main_loop.each do |duck|
+      main_pressure_loop.push duck['pressure']
+    end
+    main_pressure_loop
+  end
+
+  def retrieve_main_sea_level_loop
+    main_sea_level_loop = []
+    retrieve_main_loop.each do |duck|
+      main_sea_level_loop.push duck['sea_level']
+    end
+    main_sea_level_loop
+  end
+
+  def retrieve_main_ground_level_loop
+    main_ground_level_loop = []
+    retrieve_main_loop.each do |duck|
+      main_ground_level_loop.push duck['grnd_level']
+    end
+    main_ground_level_loop
+  end
+
+  def retrieve_main_humidity_loop
+    main_humidity_loop = []
+    retrieve_main_loop.each do |duck|
+      main_humidity_loop.push duck['humidity']
+    end
+    main_humidity_loop
+  end
+
+  def retrieve_main_temp_kf_loop
+    main_temp_kf_loop = []
+    retrieve_main_loop.each do |duck|
+      main_temp_kf_loop.push duck['temp_kf']
+    end
+    main_temp_kf_loop
+  end
+
+end
 
 test = FiveDay.new
 test.five_day_request_by_name('London')
-p test.retrieve_dt_loop
+p test.retrieve_main_temp_loop
+p test.retrieve_main_temp_min_loop
+p test.retrieve_main_temp_max_loop

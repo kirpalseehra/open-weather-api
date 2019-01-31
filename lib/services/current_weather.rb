@@ -156,14 +156,5 @@ class CurrentWeather
     @single_weather_request['cod']
   end
 
-
 end
-
-# test = CurrentWeather.new
-# puts test.current_weather_request_by_name('London')
-# puts test.current_weather_request_by_id('3632308')
-
-test = CurrentWeather.new
-test.current_weather_request_by_name('London')
-puts test.retrieve_weather_main
 
