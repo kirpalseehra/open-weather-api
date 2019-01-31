@@ -118,9 +118,3 @@ class FiveDay
   end
 
 end
-
-test = FiveDay.new
-test.five_day_request_by_name('London')
-p test.retrieve_main_temp_loop
-p test.retrieve_main_temp_min_loop
-p test.retrieve_main_temp_max_loop
