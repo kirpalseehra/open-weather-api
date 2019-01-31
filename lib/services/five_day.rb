@@ -20,6 +20,6 @@ class FiveDay
 
 end
 
-test = FiveDay.new
-# puts test.five_day_request_by_name('London', '5f665a87a58fb70f8412f3a160995328')
-puts test.five_day_request_by_id('3632308','5f665a87a58fb70f8412f3a160995328')
+# test = FiveDay.new
+# # puts test.five_day_request_by_name('London', '5f665a87a58fb70f8412f3a160995328')
+# puts test.five_day_request_by_id('3632308','5f665a87a58fb70f8412f3a160995328')
