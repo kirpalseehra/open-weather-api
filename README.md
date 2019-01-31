@@ -5,10 +5,6 @@
 ### Languages used
 * Ruby
 
-### Prerequisites
-1. Navigate to https://openweathermap.org/ and sign up to create an account
-2. Acquire an API key after signing up and use that key 
-
 ### How to download
 1. Copy/Clone the URL on GitHub into own terminal
 2. Unzip file into selected folder on own device 
@@ -24,5 +20,7 @@
 3. Creating unit tests for each individual data point which is time consuming 
 
 ### Learning points
-1. Better understanding of 
+1. Better understanding of using external APIs and retrieving the data for them
+2. Creating loops that test multiple sets of data for larger datasets
+3. Targeting specific data points in a data set using an OOP approach
 
