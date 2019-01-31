@@ -96,6 +96,67 @@ class CurrentWeather
     @single_weather_request['wind']
   end
 
+  def retrieve_wind_speed
+    retrieve_wind['speed']
+  end
+
+  def retrieve_wind_degree
+    retrieve_wind['deg']
+  end
+
+  def retrieve_clouds
+    @single_weather_request['clouds']
+  end
+
+  def retrieve_clouds_all
+    retrieve_clouds['all']
+  end
+
+  def retrieve_dt 
+    @single_weather_request['dt']
+  end
+
+  def retrieve_sys
+    @single_weather_request['sys']
+  end
+
+  def retrieve_sys_type
+    retrieve_main['type']
+  end
+
+  def retrieve_sys_id
+    retrieve_main['id']
+  end
+
+  def retrieve_sys_message
+    retrieve_main['message']
+  end
+
+  def retrieve_sys_country
+    retrieve_main['country']
+  end
+
+  def retrieve_sys_sunrise
+    retrieve_main['sunrise']
+  end
+
+  def retrieve_sys_sunset
+    retrieve_main['sunset']
+  end
+
+  def retrieve_id 
+    @single_weather_request['id']
+  end
+
+  def retrieve_name 
+    @single_weather_request['name']
+  end
+
+  def retrieve_cod 
+    @single_weather_request['cod']
+  end
+
+
 end
 
 # test = CurrentWeather.new
@@ -104,6 +165,5 @@ end
 
 test = CurrentWeather.new
 test.current_weather_request_by_name('London')
-puts test.retrieve_main_temp_max
-
+puts test.retrieve_clouds_all
 
