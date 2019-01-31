@@ -1,7 +1,6 @@
 require 'rspec'
 require 'dotenv'
-require_relative '../lib/services/current_weather'
-require_relative '../lib/services/five_day'
+require_relative '../lib/weather'
 
 # loading the .env file into the environment of rspec using the API key 
 Dotenv.load('.env')

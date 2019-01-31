@@ -14,4 +14,4 @@ class Weather
 end
 
 @weather_api = Weather.new
-puts @weather_api.current_weather_service.current_weather_request_by_name('Kathmandu','5f665a87a58fb70f8412f3a160995328')
+puts @weather_api.current_weather_service.current_weather_request_by_name('London')
