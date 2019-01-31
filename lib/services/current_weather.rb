@@ -165,5 +165,5 @@ end
 
 test = CurrentWeather.new
 test.current_weather_request_by_name('London')
-puts test.retrieve_clouds_all
+puts test.retrieve_weather_main
 

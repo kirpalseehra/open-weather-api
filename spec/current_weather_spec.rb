@@ -41,6 +41,10 @@ describe Weather do
       expect(@current_weather_service.retrieve_weather_main).to be_kind_of(String)
     end
 
+    it 'should equal one of the specified values in the documentation' do
+      expect(@current_weather_service.retrieve_weather_main).to eq('Thunderstorm') | eq('Drizzle') | eq('Rain') | eq('Snow') | eq('Atmosphere') | eq('Clear') | eq('Clouds')
+    end
+
     it 'should return the description as a String' do
       expect(@current_weather_service.retrieve_weather_description).to be_kind_of(String)
     end
@@ -187,6 +191,10 @@ describe Weather do
 
     it 'should return the main as a String' do
       expect(@current_weather_service.retrieve_weather_main).to be_kind_of(String)
+    end
+
+    it 'should equal one of the specified values in the documentation' do
+      expect(@current_weather_service.retrieve_weather_main).to eq('Thunderstorm') | eq('Drizzle') | eq('Rain') | eq('Snow') | eq('Atmosphere') | eq('Clear') | eq('Clouds')
     end
 
     it 'should return the description as a String' do
