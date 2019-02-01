@@ -5,8 +5,9 @@ describe Weather do
   context 'Tests for current weather by name' do
 
     before(:all) do
+      @weather_key = ENV['API_KEY']
       @current_weather_service = Weather.new.current_weather_service
-      @current_weather_service.current_weather_request_by_name('London')
+      @current_weather_service.current_weather_request_by_name('London', @weather_key)
     end
 
     it 'should return the results as a Hash' do
@@ -42,7 +43,7 @@ describe Weather do
     end
 
     it 'should equal one of the specified values in the documentation' do
-      expect(@current_weather_service.retrieve_weather_main).to eq('Thunderstorm') | eq('Drizzle') | eq('Rain') | eq('Snow') | eq('Atmosphere') | eq('Clear') | eq('Clouds')
+      expect(@current_weather_service.retrieve_weather_main).to eq('Thunderstorm') | eq('Drizzle') | eq('Rain') | eq('Snow') | eq('Atmosphere') | eq('Clear') | eq('Clouds') | eq('Haze')
     end
 
     it 'should return the description as a String' do
@@ -157,8 +158,9 @@ describe Weather do
   context 'Tests for current weather by id' do
 
     before(:all) do
+      @weather_key = ENV['API_KEY']
       @current_weather_service = Weather.new.current_weather_service
-      @current_weather_service.current_weather_request_by_id('3632308')
+      @current_weather_service.current_weather_request_by_id('3632308', @weather_key)
     end
 
     it 'should return the results as a Hash' do

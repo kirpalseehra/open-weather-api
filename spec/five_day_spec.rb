@@ -5,8 +5,9 @@ describe Weather do
   context 'Tests for five day forecast by name ' do
 
     before(:all) do
+      @weather_key = ENV['API_KEY']
       @five_day_service = Weather.new.five_day_service
-      @five_day_service.five_day_request_by_name('London')
+      @five_day_service.five_day_request_by_name('London', @weather_key)
     end
 
 
