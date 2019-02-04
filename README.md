@@ -10,7 +10,7 @@
 2. Unzip file into selected folder on own device 
 3. Open in selected text editor
 
-# How to run tests
+### How to run tests
 1. Install gems using 'bundle init' if gems in the gemfile are not already installed
 2. Navigate to the root directory
 3. Run rspec in your terminal 
