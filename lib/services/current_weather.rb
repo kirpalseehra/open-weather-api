@@ -154,3 +154,7 @@ class CurrentWeather
   end
 
 end
+
+test = CurrentWeather.new
+test.current_weather_request_by_name('London', )
+p test.retrieve_name

@@ -1,4 +1,4 @@
-# Open-Weather-Map-API
+# open-weather-map-api
 ### Description
 * I have created a service object model that takes data from OpenWeatherMap API including the current weather and the five day forecast and tests the individual datasets and their data types using rspec. 
 
