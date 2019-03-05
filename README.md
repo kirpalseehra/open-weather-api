@@ -11,9 +11,9 @@
 3. Open in selected text editor
 
 ### How to run tests
-1. Install gems using 'bundle init' if gems in the gemfile are not already installed
+1. Install gems using 'bundle install' in the terminal if gems in the gemfile are not already installed
 2. Navigate to the root directory
-3. Run rspec in your terminal 
+3. Run rspec in your terminal
 
 ### Challenges
 1. Retrieving the API key using a .env file
